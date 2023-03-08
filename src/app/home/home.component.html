@@ -1,0 +1,17 @@
+<!-- header -->
+<app-header (onToggle)="onToggle()" ></app-header>
+
+<mat-drawer-container class="example-container">
+    <mat-drawer mode="side" [opened]="isOpened">
+        <!-- sidebar -->
+<app-sidebar></app-sidebar>
+    </mat-drawer>
+    <mat-drawer-content>
+<!-- display user requested pages -->
+<router-outlet></router-outlet>
+    </mat-drawer-content>
+  </mat-drawer-container>
+  
+
+<!-- footer -->
+<app-footer></app-footer>

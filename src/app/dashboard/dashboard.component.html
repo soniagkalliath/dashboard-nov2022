@@ -1,0 +1,57 @@
+<!-- card row-->
+<div fxLayout="row" fxLayoutAlign="space-between center">
+    <!-- card 1 -->
+    <mat-card>
+        <app-card 
+        bg="orange"
+        icon="person"
+        desc="Students"
+        total="5000"
+        ></app-card>
+    </mat-card>
+    <!-- card 2 -->
+    <mat-card>
+        <app-card
+        bg="green"
+        icon="home"
+        desc="Institutions"
+        total="40"
+        ></app-card>
+    </mat-card>
+    <!-- card 3 -->
+    <mat-card>
+        <app-card
+        bg="red"
+        icon="dashboard"
+        desc="Dashboard"
+        total="500"
+        ></app-card>
+    </mat-card>
+    <!-- card 4 -->
+    <mat-card>
+        <app-card
+        bg="blue"
+        icon="group"
+        desc="Employees"
+        total="7000"
+        ></app-card>
+    </mat-card>
+</div>
+
+<!-- area chart row-->
+<div class="chart">
+    <app-area-chart></app-area-chart>
+</div>
+<!-- table and pie chart row -->
+<div class="tableDiv" fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="10px">
+    <!-- <p>Table design</p> -->
+    <div fxFlex="60">
+        <app-table></app-table>
+    </div>    
+    <!-- <p>Pie chart</p> -->
+   <div fxFlex="40">
+        <app-pie-chart></app-pie-chart>
+   </div>    
+</div>
+
+
